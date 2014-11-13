@@ -21,7 +21,7 @@ Rails.application.routes.draw do
     get '/login' => 'sessions#new', as: :login
     post '/session' => 'sessions#create', as: :session
     delete '/session' => 'sessions#destroy'
-    resources :staff_tasks, only: [ :index, :show ]
+    resources :tasks, only: [ :index, :show ]
     resources :results, only: [ :index, :show, :new, :edit, :create, :destroy ]
     patch '/results/:id' => 'results#update'
     resource :user, only: [ :show, :edit ]
