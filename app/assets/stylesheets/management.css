@@ -13,4 +13,5 @@
  *= require_tree ./common
  *= require_tree ./management
  *= require_self
+ *= require bootstrap
  */
