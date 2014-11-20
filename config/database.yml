@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: fwm_production
-  username: fwm
+  username: root
   password: <%= ENV['FWM_DATABASE_PASSWORD'] %>
