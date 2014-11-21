@@ -2,7 +2,7 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "centos7_rails"
-  config.vm.box_url = "http://172.16.1.110/vagrant/centos7_rails_1.00.box"
+  config.vm.box_url = "http://172.16.1.110/vagrant/centos7_rails_1.01.box"
   config.vm.provider :virtualbox do |vb|
     vb.customize [ 'modifyvm', :id, '--memory', 1024 ]
   end
