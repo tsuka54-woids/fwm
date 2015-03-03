@@ -25,6 +25,5 @@ module Fwm
       gen.controller_specs false
       gen.view_specs false
     end
-    config.assets.paths << "#{Rails}/vender/assets/fonts"
   end
 end
